@@ -70,7 +70,7 @@ button:hover {
     color: #000000;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
     h1 {
         font-size: 25px;
     }
