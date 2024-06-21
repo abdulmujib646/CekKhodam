@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: blanchedalmond;
+    background-image: url(maungbiskuat.jpeg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,14 +12,14 @@ body {
 }
 
 h1 {
-    color: red;
+    color: rgb(43, 40, 40);
 }
 
 .container {
     text-align: center;
     padding: 30px;
     border-radius: 12px;
-    background-color: chartreuse;
+    background-color:darkgrey;
     box-shadow: 0 0 10px rgba(0, 0, 0, 5);
     width: 450px;
     margin-bottom: 20px;
@@ -39,8 +40,8 @@ input[type="text"] {
 }
 
 button {
-    background-color: darkgrey;
-    color: black;
+    background: linear-gradient(0deg, rgba(174,204,203,1) 0%, rgba(6,82,85,1) 100%);
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -53,12 +54,42 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(to bottom, #143eca 5%, #006fca 100%)
+    background: linear-gradient(0deg, rgba(6,82,85,1) 0%, rgba(41,203,171,1) 100%);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 23px;
+    color: black;
 }
 
 .copyright {
     position: static;
     bottom: 10px;
-    font-size: 14px;
-    color: magenta;
+    font-size: 16px;
+    color: #000000;
+}
+
+@media screen and (max-width: 476px) {
+    h1 {
+        font-size: 25px;
+    }
+    input[type="text"] {
+        padding: 10px;
+        margin: 7px 0;
+        width: 50%;
+        box-sizing: border-box;
+        border: 2px;
+        border-radius: 8px;
+    }
+    .container {
+        width: 60%;
+    }
+    button {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .result {
+        font-size: 16px;
+    }
 }
